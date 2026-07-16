@@ -23,7 +23,7 @@
 html{
   scroll-behavior:smooth;
   background-color:var(--space);
-  background-image:url(assets/flow_bg.svg?v=3);
+  background-image:url(assets/flow_bg.svg?v=4);
   background-repeat:no-repeat;
   background-position:center top;
   background-size:cover;
