@@ -2,46 +2,36 @@
    Observatory / astronomy academic style */
 
 :root{
-  --space:#0A101A;      /* page bg */
-  --deep:#0D1524;       /* darker panel */
-  --panel:#111D30;      /* card bg */
-  --panel2:#0F1A2B;
-  --line:#213150;       /* hairlines */
-  --line-soft:#1A2740;
-  --star:#ECF0F7;       /* headings */
-  --body:#B7C2D2;       /* body text */
-  --muted:#7C8BA2;      /* secondary */
-  --gold:#E7C46A;       /* accent 1 */
-  --gold-d:#C9A64E;
-  --teal:#8FD0DC;       /* accent 2 / links */
-  --teal-d:#5EA9B8;
+  --space:#0B0B0D;      /* page bg (near-black) */
+  --deep:#111113;       /* darker panel */
+  --panel:#141416;      /* card bg */
+  --panel2:#101012;
+  --line:#2C2C31;       /* hairlines */
+  --line-soft:#202024;
+  --star:#F4F4F5;       /* headings (white) */
+  --body:#C3C3C8;       /* body text */
+  --muted:#83838A;      /* secondary */
+  --gold:#D6D6DA;       /* accent 1 -> light grey */
+  --gold-d:#9C9CA2;
+  --teal:#ECECEE;       /* links -> near white */
+  --teal-d:#B6B6BB;
   --wrap:1080px;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-/* Alhambra gold star lattice underlays the whole site */
+/* Mama's Brain Alhambra lattice underlays the whole site (mono, faint) */
 html{
   scroll-behavior:smooth;
   background-color:var(--space);
-  background-image:url(assets/lattice_gold.svg);
+  background-image:url(assets/mb_lattice.png);
   background-repeat:repeat;
-  background-size:172px;
+  background-size:640px auto;
   background-attachment:fixed;
 }
 body{
   font-family:'Inter',system-ui,-apple-system,sans-serif;
   color:var(--body);
   background-color:transparent;
-  background-image:
-    radial-gradient(1px 1px at 20% 30%, rgba(236,240,247,.55), transparent),
-    radial-gradient(1px 1px at 70% 20%, rgba(236,240,247,.40), transparent),
-    radial-gradient(1px 1px at 40% 70%, rgba(236,240,247,.35), transparent),
-    radial-gradient(1.4px 1.4px at 85% 60%, rgba(231,196,106,.5), transparent),
-    radial-gradient(1px 1px at 15% 85%, rgba(236,240,247,.30), transparent),
-    radial-gradient(1.2px 1.2px at 60% 90%, rgba(143,208,220,.45), transparent),
-    radial-gradient(1px 1px at 90% 40%, rgba(236,240,247,.35), transparent),
-    radial-gradient(1px 1px at 33% 15%, rgba(236,240,247,.30), transparent);
-  background-attachment:fixed;
   -webkit-font-smoothing:antialiased;
   line-height:1.7;
   font-size:16.5px;
@@ -74,8 +64,8 @@ strong{color:var(--star);font-weight:600}
 
 /* Buttons */
 .button{display:inline-block;padding:12px 22px;border-radius:6px;font-size:14.5px;font-weight:600;transition:.16s;cursor:pointer}
-.button-solid{background:var(--gold);color:#1a1408}
-.button-solid:hover{background:#f0d488;color:#1a1408}
+.button-solid{background:var(--star);color:#0B0B0D}
+.button-solid:hover{background:#ffffff;color:#0B0B0D}
 .button-outline{border:1px solid var(--line);color:var(--star)}
 .button-outline:hover{border-color:var(--teal);color:var(--teal)}
 
@@ -92,14 +82,12 @@ strong{color:var(--star);font-weight:600}
 .key-list strong{display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:3px}
 
 /* flow streamlines accent */
-.flowlines{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:.55;z-index:-1}
-/* Alhambra mandala accent on the home hero */
-.page-home .page-hero::after{content:"";position:absolute;top:-56px;right:-130px;width:470px;height:470px;background:url(assets/mandala.svg) no-repeat center/contain;opacity:.13;pointer-events:none;z-index:-1}
+.flowlines{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:.4;z-index:-1}
 
 /* Sections */
 .section-block{max-width:var(--wrap);margin:0 auto;padding:60px 0 56px;position:relative}
-.section-block::before{content:"";position:absolute;top:0;left:0;right:0;height:18px;background:url(assets/waves.svg) repeat-x center;background-size:auto 18px;opacity:.5;pointer-events:none}
-.section-block:first-of-type::before{opacity:.34}
+.section-block::before{content:"";position:absolute;top:-2px;left:0;right:0;height:40px;background:url(assets/mb_staff.png) repeat-x center;background-size:auto 40px;opacity:.26;pointer-events:none}
+.section-block:first-of-type::before{opacity:.18}
 .section-header{max-width:60ch;margin-bottom:34px}
 .section-header .eyebrow{margin-bottom:12px;display:block}
 .section-header p{margin-top:14px;color:var(--muted)}
