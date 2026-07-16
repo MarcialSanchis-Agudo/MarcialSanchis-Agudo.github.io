@@ -19,11 +19,19 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+/* Alhambra gold star lattice underlays the whole site */
+html{
+  scroll-behavior:smooth;
+  background-color:var(--space);
+  background-image:url(assets/lattice_gold.svg);
+  background-repeat:repeat;
+  background-size:172px;
+  background-attachment:fixed;
+}
 body{
   font-family:'Inter',system-ui,-apple-system,sans-serif;
   color:var(--body);
-  background-color:var(--space);
+  background-color:transparent;
   background-image:
     radial-gradient(1px 1px at 20% 30%, rgba(236,240,247,.55), transparent),
     radial-gradient(1px 1px at 70% 20%, rgba(236,240,247,.40), transparent),
@@ -85,9 +93,13 @@ strong{color:var(--star);font-weight:600}
 
 /* flow streamlines accent */
 .flowlines{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:.55;z-index:-1}
+/* Alhambra mandala accent on the home hero */
+.page-home .page-hero::after{content:"";position:absolute;top:-56px;right:-130px;width:470px;height:470px;background:url(assets/mandala.svg) no-repeat center/contain;opacity:.13;pointer-events:none;z-index:-1}
 
 /* Sections */
-.section-block{max-width:var(--wrap);margin:0 auto;padding:56px 0;border-top:1px solid var(--line-soft)}
+.section-block{max-width:var(--wrap);margin:0 auto;padding:60px 0 56px;position:relative}
+.section-block::before{content:"";position:absolute;top:0;left:0;right:0;height:18px;background:url(assets/waves.svg) repeat-x center;background-size:auto 18px;opacity:.5;pointer-events:none}
+.section-block:first-of-type::before{opacity:.34}
 .section-header{max-width:60ch;margin-bottom:34px}
 .section-header .eyebrow{margin-bottom:12px;display:block}
 .section-header p{margin-top:14px;color:var(--muted)}
@@ -164,6 +176,7 @@ a.panel:hover h3{color:var(--teal)}
   .page-hero{grid-template-columns:1fr;gap:36px;padding:56px 0 40px}
   .hero-side{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:26px}
   .grid-2,.grid-3,.defs,.channels,.overview-grid{grid-template-columns:1fr}
+  .page-home .page-hero::after{width:300px;right:-90px;top:-16px;opacity:.08}
   .pub{grid-template-columns:auto 1fr;gap:14px}
   .pub .cites{grid-column:2;justify-self:start;margin-top:4px}
 }
