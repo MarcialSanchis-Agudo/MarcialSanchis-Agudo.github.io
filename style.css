@@ -86,8 +86,8 @@ strong{color:var(--star);font-weight:600}
 
 /* Sections */
 .section-block{max-width:var(--wrap);margin:0 auto;padding:60px 0 56px;position:relative}
-.section-block::before{content:"";position:absolute;top:-2px;left:0;right:0;height:40px;background:url(assets/mb_staff.png) repeat-x center;background-size:auto 40px;opacity:.26;pointer-events:none}
-.section-block:first-of-type::before{opacity:.18}
+.section-block::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:var(--line-soft);pointer-events:none}
+.section-block:first-of-type::before{opacity:.5}
 .section-header{max-width:60ch;margin-bottom:34px}
 .section-header .eyebrow{margin-bottom:12px;display:block}
 .section-header p{margin-top:14px;color:var(--muted)}
@@ -151,8 +151,9 @@ a.panel:hover h3{color:var(--teal)}
 .link-panel h3{margin:10px 0 8px}
 .link-panel p{font-size:14px;color:var(--body)}
 
-/* Footer */
-.site-footer{border-top:1px solid var(--line-soft);margin-top:40px;padding:40px 0}
+/* Footer — carries the Mama's Brain integral motif as a sign-off flourish */
+.site-footer{border-top:1px solid var(--line-soft);margin-top:40px;padding:150px 0 40px;position:relative;overflow:hidden}
+.site-footer::before{content:"";position:absolute;top:26px;left:0;right:0;height:104px;background:url(assets/mb_staff.png) repeat-x center;background-size:auto 104px;opacity:.3;pointer-events:none}
 .footer-inner{max-width:var(--wrap);margin:0 auto;padding:0 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center;font-size:13px;color:var(--muted)}
 .footer-inner .brand{font-size:1rem}
 .footer-links{display:flex;gap:20px}
