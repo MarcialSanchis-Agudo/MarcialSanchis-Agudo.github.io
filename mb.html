@@ -3,195 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mama's Brain · Makers of slAIdes</title>
-<meta name="description" content="Mama's Brain helps experts relearn how to learn, now that they work with AI. Makers of slAIdes, the editor for technical talks where LaTeX stays LaTeX.">
-<meta property="og:title" content="Mama's Brain · Makers of slAIdes">
-<meta property="og:description" content="Help experts relearn how to learn, now that they work with AI.">
+<title>Mama's Brain · Sovereign AI for expert work</title>
+<meta name="description" content="Mama's Brain builds local models for sovereign expert work, and software built natively for them. Makers of slAIdes.">
+<meta property="og:title" content="Mama's Brain · Sovereign AI for expert work">
+<meta property="og:description" content="Local models that stay with the people who own the knowledge, and software built natively for them.">
 <meta property="og:image" content="https://marcialsanchis-agudo.github.io/assets/mb/two-users.jpg">
 <link rel="icon" href="assets/mb/mama-s-brain-mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="mb.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mb.css?v=3">
 </head>
 <body>
 
-<header class="mb-header">
+<header class="top">
   <div class="wrap">
-    <a class="mb-logo" href="#top" aria-label="Mama's Brain, top of page"><img src="assets/mb/mama-s-brain-wordmark.svg" alt="Mama's Brain" width="79" height="40"></a>
-    <nav class="mb-nav" id="mbnav" aria-label="Mama's Brain">
-      <a href="#purpose">Purpose</a>
+    <a href="#top" aria-label="Mama's Brain"><img src="assets/mb/mama-s-brain-wordmark.svg" alt="Mama's Brain" width="67" height="34"></a>
+    <nav aria-label="Sections">
+      <a href="#thesis">Thesis</a>
       <a href="#slaides">slAIdes</a>
-      <a href="#build">How we build</a>
       <a href="#writing">Writing</a>
-      <a class="home" href="index.html">Marcial's site ↗</a>
-      <a class="btn btn-blue" href="https://slaides.app" target="_blank" rel="noopener">Try slAIdes</a>
+      <a href="#team">Team</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu" aria-controls="mbnav" aria-expanded="false" onclick="var n=document.getElementById('mbnav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
   </div>
 </header>
 
-<main id="main">
+<main>
 
   <section class="hero" id="top">
     <div class="wrap">
-      <span class="eyebrow">Mama's Brain · Stockholm</span>
-      <h1>Help experts relearn how to learn, <em class="grad">now that they work with AI.</em></h1>
-      <p class="lead">We build the expert's workspace: the AI does the mechanical work, the expert keeps the object, and nothing gets flattened between the data and the decision.</p>
-      <div class="hero-cta">
-        <a class="btn btn-grad" href="https://slaides.app" target="_blank" rel="noopener">Try slAIdes →</a>
-        <a class="btn btn-ghost" href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Read the newsletter</a>
+      <span class="label">Mama's Brain · Stockholm</span>
+      <h1>Sovereign AI for <em class="grad">expert work.</em></h1>
+      <p>We build local models that stay with the people and companies who own the knowledge, and software made natively for them, so the expert keeps the data, the model and the decision.</p>
+      <div class="actions">
+        <a class="btn solid" href="https://slaides.app" target="_blank" rel="noopener">Try slAIdes</a>
+        <a class="btn" href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Read on Substack</a>
       </div>
     </div>
   </section>
 
-  <section id="purpose">
+  <section id="thesis">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">What we commit to</span>
-        <h2>Three promises, <em class="grad">one craft.</em></h2>
-        <p>Within five years, using AI in expert work should no longer mean giving up authorship. Speed and control stop being a trade-off.</p>
-      </div>
-      <div class="grid g3">
-        <div class="card">
-          <span class="num">01</span>
-          <h3>Relearning to learn</h3>
-          <p>What the AI does stays open, visible and editable, so working with it makes you better at your craft instead of making you forget it.</p>
-        </div>
-        <div class="card">
-          <span class="num">02</span>
-          <h3>Coherent workflows</h3>
-          <p>One thread from source to result: objects, proposals and the memory of decisions carry across steps and tools.</p>
-        </div>
-        <div class="card">
-          <span class="num">03</span>
-          <h3>Work that lasts</h3>
-          <p>Work you can come back to months later, review, reuse and defend, at a pace an expert can sustain.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap">
-      <span class="eyebrow">Our design rule</span>
-      <h2 style="margin-top:16px">Nothing gets <em class="grad">flattened.</em></h2>
-      <p>An equation stays an equation, a chart keeps its data, a claim keeps its source. No system certifies its own work: the machine proposes, the expert decides.</p>
-    </div>
-  </section>
-
-  <section class="product" id="slaides">
-    <div class="wrap">
-      <div class="product-top">
+      <div class="intro">
+        <span class="label">Thesis</span>
         <div>
-          <img class="sl-logo" src="assets/mb/slaides-logo.png" alt="slAIdes">
-          <span class="eyebrow">Our first product · live</span>
-          <h2 style="margin-top:14px">Technical talks where <span>LaTeX stays LaTeX.</span></h2>
-          <ul class="ticks">
-            <li>Equations stay LaTeX: click one, edit the source, see it update.</li>
-            <li>Charts keep their data, tables keep their formulas, TikZ figures stay code.</li>
-            <li>Your AI assistant (ChatGPT today) builds and edits the deck through checked operations.</li>
-            <li>Every change is a revision you can compare, undo or restore. Export to PowerPoint you can still edit.</li>
-          </ul>
-          <div class="price">
-            <strong>$1.99<span class="muted" style="font-size:1rem;font-weight:400"> / month</span></strong>
-            <a class="btn btn-blue" href="https://slaides.app" target="_blank" rel="noopener">Open slaides.app →</a>
-          </div>
-        </div>
-        <div class="video">
-          <video src="assets/mb/slaides-demo.mp4" poster="assets/mb/slaides-demo-poster.jpg" controls muted playsinline preload="none" aria-label="Screen recording: editing an equation's LaTeX in slAIdes"></video>
+          <h2>Your knowledge should not have to <em>leave home</em> to be useful.</h2>
+          <p class="lead">Today, using AI in expert work means sending your data, drafts and know-how to someone else's model. We think experts and companies should be able to run that intelligence themselves, on their own terms.</p>
         </div>
       </div>
-
-      <div class="grid g3 shots">
-        <figure class="shot"><img src="assets/mb/equations.jpg" alt="slAIdes equation editor next to the slide" loading="lazy" width="700" height="875"><figcaption>Live equations, never a screenshot.</figcaption></figure>
-        <figure class="shot"><img src="assets/mb/shapes.jpg" alt="A portrait built from 3,563 editable shapes" loading="lazy" width="700" height="875"><figcaption>338 parametric shapes. Even a portrait stays editable.</figcaption></figure>
-        <figure class="shot"><img src="assets/mb/history.jpg" alt="Element history comparing two versions of an equation" loading="lazy" width="700" height="875"><figcaption>Undo one element, not the whole file.</figcaption></figure>
+      <ul class="points">
+        <li>
+          <span class="k">01 · Models</span>
+          <div><h3>Local models <span class="status">In development</span></h3><p>Models that run where your data lives and are tuned to your field, so what you know stays yours.</p></div>
+        </li>
+        <li>
+          <span class="k">02 · Software</span>
+          <div><h3>Native software</h3><p>Tools designed for those models from the start: typed, checkable operations instead of prompts that produce pictures. An equation stays an equation; a chart keeps its data.</p></div>
+        </li>
+        <li>
+          <span class="k">03 · Judgment</span>
+          <div><h3>The expert decides</h3><p>Every change is visible, revisioned and reversible. The machine proposes; the person who has to defend the result has the last word.</p></div>
+        </li>
+      </ul>
+      <div class="road" aria-label="Roadmap">
+        <div><span class="label">Today</span><b>Frontier assistants</b><p>slAIdes works with the assistant you already use, through MCP.</p></div>
+        <div><span class="label">Next</span><b>Smaller open models</b><p>The same software, running on models you can host.</p></div>
+        <div><span class="label">Then</span><b>Your own model</b><p>Tuned on your data, on your machines. The software is built for it.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="build">
-    <div class="wrap split">
-      <div>
-        <span class="eyebrow">How we build</span>
-        <h2 style="margin-top:14px">Software has a new user. <em class="grad">We built for both.</em></h2>
-        <p style="margin-top:20px;color:#E9DCE4">People edit with their hands. AI agents edit through MCP, an open protocol: typed operations the server checks before they land, each one a numbered revision. The AI doesn't get a brush; it gets a toolbox, and you keep the last word.</p>
-        <p style="margin-top:16px;color:var(--muted)">The structure is ours; the model on the other side can change.</p>
-        <div class="road">
-          <div style="border-color:var(--peach)">Today<b>Frontier models</b></div>
-          <div style="border-color:var(--magenta)">Next<b>Smaller open models</b></div>
-          <div style="border-color:var(--violet)">One day<b>Your own model</b></div>
-        </div>
-      </div>
-      <img src="assets/mb/two-users.jpg" alt="Our editor has two users. Only one has hands." loading="lazy" width="900" height="1125">
-    </div>
-  </section>
-
-  <section id="products" style="padding-top:40px">
+  <section id="slaides">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">The family</span>
-        <h2>One principle, <em class="grad">several tools.</em></h2>
-      </div>
-      <div class="grid g2">
-        <a class="card" href="https://slaides.app" target="_blank" rel="noopener">
-          <span class="tag live">Live · slaides.app</span>
-          <h3>slAIdes</h3>
-          <p>The editor for technical talks. LaTeX, charts, tables and media stay native, editable objects, for you and for your AI assistant.</p>
-        </a>
-        <div class="card">
-          <span class="tag dev">In development</span>
-          <h3>EasyPlotter</h3>
-          <p>Scientific figures you can rerun, inside VS Code. Load CSV, HDF5, NumPy or Excel, build processing pipelines and export publication-ready figures.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Prototype</span>
-          <h3>AgentPortfolio</h3>
-          <p>Portfolio review for public markets: market data, news analysis and agent coordination turned into an auditable basis a professional can defend. Human review, not automatic trading.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Prototype</span>
-          <h3>GeniusLamp</h3>
-          <p>Opportunity review for private markets: material, evidence, missing proof and reviewer feedback become a structured decision packet.</p>
+      <div class="intro">
+        <span class="label">First product · Live</span>
+        <div>
+          <img src="assets/mb/slaides-logo.png" alt="slAIdes" style="height:44px;width:auto;margin-bottom:20px">
+          <h2>Technical talks where <em>LaTeX stays LaTeX.</em></h2>
+          <p class="lead">Equations, charts, tables and figures stay native objects you and your AI assistant can edit. Every change is a revision. $1.99 per month.</p>
+          <div class="actions"><a class="btn solid" href="https://slaides.app" target="_blank" rel="noopener">Open slaides.app</a></div>
         </div>
       </div>
+      <div class="video">
+        <video src="assets/mb/slaides-demo.mp4" poster="assets/mb/slaides-demo-poster.jpg" controls muted playsinline preload="none" aria-label="Screen recording: editing an equation's LaTeX in slAIdes"></video>
+      </div>
+      <div class="shots">
+        <figure><img src="assets/mb/equations.jpg" alt="Equation editor next to the slide" loading="lazy" width="700" height="875"><figcaption>Live equations.</figcaption></figure>
+        <figure><img src="assets/mb/shapes.jpg" alt="A portrait built from 3,563 editable shapes" loading="lazy" width="700" height="875"><figcaption>Editable shapes, even a portrait.</figcaption></figure>
+        <figure><img src="assets/mb/history.jpg" alt="Element history comparing two versions of an equation" loading="lazy" width="700" height="875"><figcaption>Undo one element.</figcaption></figure>
+      </div>
+      <ul class="rows" aria-label="Products">
+        <li><h3>slAIdes</h3><span>Editor for technical talks.</span><span class="st live">Live</span></li>
+        <li><h3>EasyPlotter</h3><span>Scientific figures you can rerun, inside VS Code.</span><span class="st">In development</span></li>
+        <li><h3>AgentPortfolio</h3><span>Auditable portfolio review for public markets.</span><span class="st">Prototype</span></li>
+        <li><h3>GeniusLamp</h3><span>Structured opportunity review for private markets.</span><span class="st">Prototype</span></li>
+      </ul>
     </div>
   </section>
 
-  <section class="writing" id="writing">
-    <div class="wrap split">
+  <section id="writing">
+    <div class="wrap substack">
       <div>
-        <span class="eyebrow">Building in the open</span>
-        <h2 style="margin-top:14px">Mama's Brain <em class="grad">on Substack.</em></h2>
-        <p style="margin-top:20px;color:#E9DCE4">Essays on expertise, AI and the tools in between: what the machine gets right, what it gets wrong, and how we design for the expert who has to defend the result.</p>
-        <div class="hero-cta">
-          <a class="btn btn-grad" href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Subscribe</a>
-          <a class="btn btn-ghost" href="https://mamasbrain8.substack.com/p/vision-mission-and-values" target="_blank" rel="noopener">Vision, mission and values</a>
+        <span class="label">Writing</span>
+        <h2 style="margin-top:16px">Mama's Brain on <em>Substack.</em></h2>
+        <p class="lead" style="margin-top:20px">Essays on expertise, AI and sovereignty: what the machine gets right, what it gets wrong, and how we design for the expert who has to defend the result.</p>
+        <div class="actions">
+          <a class="btn solid" href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Read the newsletter</a>
+          <a class="btn" href="https://mamasbrain8.substack.com/p/vision-mission-and-values" target="_blank" rel="noopener">Vision, mission and values</a>
         </div>
       </div>
-      <div>
-        <span class="eyebrow">Who we are</span>
-        <p style="margin-top:14px;color:#E9DCE4">Two PhD students at KTH in Stockholm. Bootstrapped.</p>
-        <div class="people">
-          <div class="person"><b>Marcial Sanchis Agudo</b><span>Co-founder</span></div>
-          <div class="person"><b>Francesco Mario D'Afiero</b><span>Co-founder</span></div>
+      <iframe src="https://mamasbrain8.substack.com/embed" title="Subscribe to Mama's Brain on Substack" loading="lazy" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="wrap">
+      <div class="intro">
+        <span class="label">Team</span>
+        <div>
+          <h2>Two researchers at <em>KTH, Stockholm.</em></h2>
+          <p class="lead">We build the tools we needed for our own research. Bootstrapped. Pilots, research groups and collaborations: <a href="mailto:msanchisagudo@gmail.com">msanchisagudo@gmail.com</a></p>
         </div>
-        <p style="margin-top:22px">Pilots, research groups and collaborations: <a href="mailto:msanchisagudo@gmail.com">msanchisagudo@gmail.com</a></p>
+      </div>
+      <div class="team">
+        <div class="person">
+          <div class="ph" role="img" aria-label="Photo of Marcial Sanchis Agudo (placeholder)">MS</div>
+          <h3>Marcial Sanchis Agudo</h3>
+          <p>Co-founder</p>
+        </div>
+        <div class="person">
+          <div class="ph" role="img" aria-label="Photo of Francesco Mario D'Afiero (placeholder)">FD</div>
+          <h3>Francesco Mario D'Afiero</h3>
+          <p>Co-founder</p>
+        </div>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="mb-footer">
+<footer>
   <div class="wrap">
-    <img src="assets/mb/mama-s-brain-wordmark-cream.svg" alt="Mama's Brain" width="67" height="34">
+    <img src="assets/mb/mama-s-brain-wordmark-cream.svg" alt="Mama's Brain" width="59" height="30">
     <nav aria-label="Footer">
       <a href="https://slaides.app" target="_blank" rel="noopener">slaides.app</a>
       <a href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Substack</a>
-      <a href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="index.html">Marcial Sanchis Agudo</a>
+      <a href="mailto:msanchisagudo@gmail.com">Contact</a>
     </nav>
     <span>© 2026 Mama's Brain · Stockholm</span>
   </div>
