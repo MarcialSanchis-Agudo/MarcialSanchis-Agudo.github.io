@@ -3,13 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="About Marcial Sanchis Agudo, formation in mathematics and engineering mechanics, and the disciplined practice behind the research.">
 <title>About · Marcial Sanchis Agudo</title>
+<meta name="description" content="About Marcial Sanchis Agudo: mathematician (Brunel MMath), PhD researcher and Marie Skłodowska-Curie Fellow at KTH FLOW, co-founder of Mama's Brain.">
+<meta property="og:title" content="About · Marcial Sanchis Agudo">
+<meta property="og:description" content="About Marcial Sanchis Agudo: mathematician (Brunel MMath), PhD researcher and Marie Skłodowska-Curie Fellow at KTH FLOW, co-founder of Mama's Brain.">
+<meta name="theme-color" content="#09090B">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body class="page-about">
 
@@ -21,78 +24,86 @@
       <a href="research.html">Research</a>
       <a href="work.html">Publications</a>
       <a href="writing.html">Writing</a>
-      <a href="mb.html">MB</a>
+      <a class="nav-mb" href="mb.html">Mama's Brain</a>
       <a class="active" href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <button class="nav-toggle" aria-label="Menu" aria-controls="nav" aria-expanded="false">☰</button>
   </div>
 </header>
 
 <main class="page-main">
-  <section class="page-hero" style="grid-template-columns:1.3fr .9fr">
+<section class="page-hero" style="grid-template-columns:1.3fr .8fr;align-items:center">
     <div class="hero-copy">
       <span class="eyebrow">About</span>
-      <h1>Formation, approach, and disciplined practice.</h1>
-      <p class="lead">My background combines mathematics, engineering mechanics, and scientific computing. I prefer work that stays <span class="serif-italic">rigorous, readable, and structurally clear</span>, whether it is theoretical, computational, or manuscript-driven.</p>
+      <h1>A mathematician who ended up in turbulence, and then in building tools.</h1>
+      <p class="lead">My background combines mathematics, engineering mechanics and scientific computing. I like work that stays <span class="serif-italic">rigorous, readable and structurally clear</span>, whether it is a proof, a model or a piece of software someone else has to use.</p>
     </div>
-    <aside class="hero-side">
-      <span class="eyebrow">Approach</span>
-      <h2>Serious, calm, and exacting.</h2>
-      <p style="font-size:14.5px;margin-top:10px">I value clear arguments, strong mathematical intuition, and the kind of slow refinement that improves both a proof and a piece of code.</p>
+    <aside>
+      <img class="portrait" src="assets/marcial.jpg" alt="Marcial Sanchis Agudo" width="300" height="300">
+      <ul class="key-list">
+        <li><strong>Position</strong>Marie Skłodowska-Curie PhD Fellow, KTH FLOW</li>
+        <li><strong>Advisors</strong>Ricardo Vinuesa, Shervin Bagheri and Shahab Mirjalili</li>
+        <li><strong>Based in</strong>Stockholm, Sweden</li>
+      </ul>
     </aside>
   </section>
 
   <section class="section-block">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="eyebrow">Path</span>
-      <h2>Education and research formation.</h2>
+      <h2>Education, research and building.</h2>
     </div>
-    <ul class="timeline">
+    <ul class="timeline reveal">
       <li>
         <div class="when">2018 – 2022 · Brunel University London</div>
         <h3>MMath in Mathematics</h3>
-        <p>Emphasis on random matrices, dynamical systems, probability, and advanced mathematical methods.</p>
+        <p>Emphasis on random matrices, dynamical systems, probability and advanced mathematical methods.</p>
       </li>
       <li>
         <div class="when">2023 – present · KTH Royal Institute of Technology</div>
         <h3>PhD, Engineering Mechanics, FLOW</h3>
-        <p>Marie Skłodowska-Curie fellow working on pressure-gradient turbulent boundary layers, data-driven methods, machine learning, and high-performance computing. Advised by Ricardo Vinuesa, Shervin Bagheri, and Shahab Mirjalili.</p>
+        <p>Marie Skłodowska-Curie Fellow in the MODELAIR network, working on turbulent boundary layers, chaotic forecasting, surrogate models, explainable AI and high-performance computing.</p>
       </li>
       <li>
         <div class="when">2025 · PredictiveIQ</div>
         <h3>Explainable AI collaboration</h3>
-        <p>Work on explainable-AI tools for graph-transformer and latent-space analysis, focused on input importance and interpretation.</p>
+        <p>Explainable-AI tools for graph-transformer and latent-space analysis, focused on input importance and interpretation.</p>
       </li>
       <li>
-        <div class="when">2026 · MB Solutions / Mama's Brain</div>
+        <div class="when">2025 · Microflown Technologies, Arnhem</div>
+        <h3>Marie Skłodowska-Curie secondment</h3>
+        <p>Industrial secondment in acoustic sensing, bringing data-driven methods to real measurement problems.</p>
+      </li>
+      <li class="mb">
+        <div class="when">2026 · Mama's Brain</div>
         <h3>Co-founder</h3>
-        <p>Building conscious, human-in-the-loop AI for expert workflows, bringing the same structure-first mathematics into applied decision systems.</p>
+        <p>Building tools for engineers and scientists where nothing gets flattened, with Francesco D'Afiero. First product live: <a href="https://slaides.app" target="_blank" rel="noopener">slAIdes</a>.</p>
       </li>
     </ul>
   </section>
 
   <section class="section-block">
-    <div class="section-header">
-      <span class="eyebrow">Personal discipline</span>
+    <div class="section-header reveal">
+      <span class="eyebrow">Outside the work</span>
       <h2>What shapes the work.</h2>
     </div>
     <div class="grid grid-2">
-      <div class="panel">
-        <h3>Classical and scientific taste</h3>
-        <p>I prefer proportion, clarity, and calm structure, a style closer to an observatory or a study than to a product landing page.</p>
-      </div>
-      <div class="panel">
+      <div class="panel reveal">
         <h3>Astronomy and mathematics</h3>
-        <p>Astronomy suggests scale and orientation; mathematics provides the discipline to stay precise when the system itself is difficult.</p>
+        <p>Astronomy gives scale and orientation; mathematics gives the discipline to stay precise when the system itself is difficult.</p>
       </div>
-      <div class="panel">
+      <div class="panel reveal">
         <h3>Calisthenics and jiu jitsu</h3>
-        <p>An appreciation for balance, leverage, control, and technical repetition, which shapes how I think about structure in movement and theory.</p>
+        <p>Balance, leverage, control and technical repetition. The same things that matter in a good argument.</p>
       </div>
-      <div class="panel">
-        <h3>Basketball, music, yoga, and water</h3>
-        <p>Rhythm, spacing, timing, and smooth transitions matter. I wanted this site to carry that same sense of continuity rather than abrupt visual force.</p>
+      <div class="panel reveal">
+        <h3>Basketball, music, yoga and water</h3>
+        <p>Rhythm, spacing, timing and smooth transitions. Things that flow, which is maybe why I study flows.</p>
+      </div>
+      <div class="panel reveal">
+        <h3>Writing</h3>
+        <p>Essays on AI, learning and friendship, in English and Spanish, on <a href="writing.html">Sociedad en flujo</a>.</p>
       </div>
     </div>
   </section>
@@ -104,12 +115,14 @@
     <div class="footer-links">
       <a href="https://scholar.google.com/citations?user=egkPCv4AAAAJ" target="_blank" rel="noopener">Scholar</a>
       <a href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://substack.com/@sociedadenflujo" target="_blank" rel="noopener">Substack</a>
+      <a href="https://github.com/MarcialSanchis-Agudo" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Substack</a>
       <a href="mailto:sanchis@kth.se">Email</a>
     </div>
     <span>© 2026 · Stockholm</span>
   </div>
 </footer>
 
+<script src="assets/site.js?v=1" defer></script>
 </body>
 </html>

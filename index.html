@@ -3,15 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Marcial Sanchis Agudo, PhD researcher at KTH FLOW working on turbulence, nonlinear dynamics, interpretable AI, and the geometric mathematics of flow.">
+<title>Marcial Sanchis Agudo · Chaotic systems, turbulence and interpretable AI</title>
+<meta name="description" content="Marcial Sanchis Agudo: PhD researcher at KTH FLOW working on turbulence, forecasting of chaotic systems and interpretable AI. Co-founder of Mama's Brain, the company behind slAIdes.">
 <meta property="og:title" content="Marcial Sanchis Agudo">
-<meta property="og:description" content="Turbulence, nonlinear dynamics, and the interpretable mathematics of flow.">
-<title>Marcial Sanchis Agudo</title>
+<meta property="og:description" content="I study chaotic systems, and I build tools for the people who model them.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcialsanchis-agudo.github.io/">
+<meta name="theme-color" content="#09090B">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body class="page-home">
 
@@ -23,97 +26,147 @@
       <a href="research.html">Research</a>
       <a href="work.html">Publications</a>
       <a href="writing.html">Writing</a>
-      <a href="mb.html">MB</a>
+      <a class="nav-mb" href="mb.html">Mama's Brain</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <button class="nav-toggle" aria-label="Menu" aria-controls="nav" aria-expanded="false">☰</button>
   </div>
 </header>
 
 <main class="page-main">
-  <section class="page-hero">
-    <img class="flowlines" src="assets/flow.svg?v=2" alt="" aria-hidden="true">
-    <div class="hero-copy">
+  <section class="hero-xl">
+    <canvas id="flowfield" aria-hidden="true"></canvas>
+    <div class="hero-xl-inner">
       <span class="eyebrow">PhD researcher · KTH FLOW · Stockholm</span>
-      <h1>Turbulence, nonlinear dynamics, and the interpretable mathematics of flow.</h1>
-      <p class="lead">I work across fluid mechanics, chaos, and machine learning, looking for the <span class="serif-italic">geometric structure</span> underneath complex systems, and for ways to make models say what they actually know.</p>
+      <h1 class="display">Marcial Sanchis <em>Agudo</em></h1>
+      <p class="hero-statement">I study chaotic systems, and I build tools for the people who model them.</p>
+      <p class="lead">Turbulence, forecasting and interpretable AI at KTH as a Marie Skłodowska-Curie Fellow. Co-founder of <a href="mb.html">Mama's Brain</a>, the company behind slAIdes.</p>
       <div class="hero-actions">
-        <a class="button button-solid" href="work.html">Publications</a>
-        <a class="button button-outline" href="research.html">Research</a>
+        <a class="button button-solid" href="research.html">Research <span class="arr">→</span></a>
+        <a class="button button-outline" href="mb.html">Mama's Brain</a>
+        <a class="button button-outline" href="contact.html">Get in touch</a>
       </div>
     </div>
-    <aside class="hero-side">
-      <span class="eyebrow">Scientific profile</span>
-      <h2>Mathematics, fluid mechanics, disciplined inquiry.</h2>
-      <ul class="key-list">
-        <li><strong>Position</strong> Marie Skłodowska-Curie PhD Fellow, Engineering Mechanics, KTH FLOW</li>
-        <li><strong>Advisors</strong> Ricardo Vinuesa, Shervin Bagheri &amp; Shahab Mirjalili</li>
-        <li><strong>Themes</strong> Turbulence · chaos · interpretable AI · geometric theory</li>
-        <li><strong>Based in</strong> Stockholm, Sweden</li>
-        <li><strong>Now founding</strong> <a href="mb.html">MB Solutions, Mama's Brain</a>: conscious intelligence for expert workflows</li>
-      </ul>
-    </aside>
+    <div class="hero-caption"><span class="dot"></span>Live: tracers in a field of drifting vortices. Move your cursor to stir it.</div>
+    <div class="scroll-cue" aria-hidden="true"></div>
   </section>
 
-  <section class="section-block" style="border-top:0;padding-top:0">
-    <div class="section-header">
-      <span class="eyebrow">Selected work</span>
-      <h2>Three papers that define the arc.</h2>
+  <section class="section-block flush">
+    <div class="section-header reveal">
+      <span class="eyebrow">Two tracks, one method</span>
+      <h2>Understand the system first. Then build what people actually need.</h2>
+    </div>
+    <div class="tracks">
+      <a class="track reveal" href="research.html">
+        <span class="num">01</span>
+        <span class="eyebrow">Research</span>
+        <h2>Forecasting and explaining chaotic flows.</h2>
+        <p>Attention models that stay robust on chaotic time series, surrogate and reduced-order models of turbulence, and explainable AI that maps what a latent space learned back to physical space.</p>
+        <ul class="chips">
+          <li>Turbulence</li><li>Chaotic forecasting</li><li>Surrogate models</li><li>Explainable AI</li>
+        </ul>
+        <span class="go">Research and publications <span class="arr">→</span></span>
+      </a>
+      <a class="track track-mb reveal" href="mb.html">
+        <span class="num">02</span>
+        <span class="eyebrow">Building · Mama's Brain</span>
+        <h2>Tools where nothing gets flattened.</h2>
+        <p>Software for engineers and scientists where the AI does the labour and the expert keeps the object. An equation stays an equation, a chart keeps its data, a figure stays reproducible.</p>
+        <ul class="chips">
+          <li class="live">slAIdes · live</li><li>EasyPlotter · in development</li>
+        </ul>
+        <span class="go">About Mama's Brain <span class="arr">→</span></span>
+      </a>
+    </div>
+  </section>
+
+  <div class="site-shell" style="padding:0">
+    <div class="venues reveal">
+      <span class="label">Published in</span>
+      <span class="v">Journal of Fluid Mechanics</span>
+      <span class="v">Physics of Fluids</span>
+      <span class="v">APL Computational Physics</span>
+      <span class="v">J. Phys.: Conference Series</span>
+      <span class="v">DATE</span>
+    </div>
+  </div>
+
+  <section class="section-block flush">
+    <div class="section-head-row reveal">
+      <div class="section-header">
+        <span class="eyebrow">Selected work</span>
+        <h2>Three papers that define the arc.</h2>
+      </div>
+      <a class="more-link" href="work.html">All publications →</a>
     </div>
     <div class="grid grid-3">
-      <a class="panel" href="https://pubs.aip.org/aip/aco/article/1/1/016104/3362108/" target="_blank" rel="noopener">
-        <span class="tag">Chaotic systems</span>
+      <a class="panel reveal" href="https://pubs.aip.org/aip/aco/article/1/1/016104/3362108/" target="_blank" rel="noopener">
+        <span class="tag">Chaotic forecasting</span>
         <h3>Easy Attention</h3>
-        <p>A simpler, more robust attention mechanism for temporal prediction in chaotic systems, Lorenz, shear turbulence, and reactor models.</p>
+        <p>A simpler, more robust attention mechanism for temporal prediction in chaotic systems: Lorenz, shear turbulence and reactor models.</p>
         <p class="meta">APL Computational Physics, 2025 · 30 citations</p>
       </a>
-      <a class="panel" href="https://arxiv.org/abs/2512.00068" target="_blank" rel="noopener">
+      <a class="panel reveal" href="https://arxiv.org/abs/2512.00068" target="_blank" rel="noopener">
         <span class="tag">Turbulence theory</span>
         <h3>A Geometric Foundation for the Universal Laws of Turbulence</h3>
         <p>Tying the Kolmogorov scale and the law of the wall to microscopic path uncertainty and stochastic fixed points.</p>
         <p class="meta">arXiv:2512.00068, 2025</p>
       </a>
-      <a class="panel" href="https://arxiv.org/abs/2601.03311" target="_blank" rel="noopener">
+      <a class="panel reveal" href="https://arxiv.org/abs/2601.03311" target="_blank" rel="noopener">
         <span class="tag">Interpretable AI</span>
         <h3>X-CAL</h3>
-        <p>Explaining latent causality in physical space, β-VAE compression, SURD causality, and Gradient-SHAP for shear flows.</p>
+        <p>Explaining latent causality in physical space: β-VAE compression, SURD causality and Gradient-SHAP for shear flows.</p>
         <p class="meta">arXiv:2601.03311, 2026</p>
       </a>
     </div>
   </section>
 
   <section class="section-block">
-    <div class="section-header">
-      <span class="eyebrow">Explore</span>
-      <h2>The rest of the record.</h2>
+    <div class="section-head-row reveal">
+      <div class="section-header">
+        <span class="eyebrow">Writing · Sociedad en flujo</span>
+        <h2>Thinking in the open.</h2>
+      </div>
+      <a class="more-link" href="writing.html">All writing →</a>
     </div>
-    <div class="overview-grid">
-      <a class="link-panel" href="research.html">
-        <span class="panel-label">Research</span>
-        <h3>Areas, methods, and current questions</h3>
-        <p>Geometric turbulence, interpretable latent dynamics, chaotic prediction, and unified flow programs.</p>
+    <div class="posts reveal">
+      <a class="post" href="https://mamasbrain8.substack.com/p/saturns-children-why-security-and" target="_blank" rel="noopener">
+        <span class="when">Nov 2026</span>
+        <div><h3>Saturn's Children: why security and local models are the key</h3><p>The remora, the octopus and Metis.</p></div>
+        <span class="where">Substack ↗</span>
       </a>
-      <a class="link-panel" href="work.html">
-        <span class="panel-label">Publications</span>
-        <h3>Full list with venues and citations</h3>
-        <p>Journal papers, conference work, and active manuscripts, with links to arXiv and journals.</p>
+      <a class="post" href="https://mamasbrain8.substack.com/p/vision-mission-and-values" target="_blank" rel="noopener">
+        <span class="when">Oct 2026</span>
+        <div><h3>Vision, mission and values</h3><p>A manifesto for Mama's Brain: coherent and sustainable workflows that mix machines and humans.</p></div>
+        <span class="where">Substack ↗</span>
       </a>
-      <a class="link-panel" href="writing.html">
-        <span class="panel-label">Writing</span>
-        <h3>Essays, notes, and a blog</h3>
-        <p>Longer-form thinking on AI, optimization, and learning, plus highlights from LinkedIn.</p>
+      <a class="post" href="https://mamasbrain8.substack.com/p/the-illusion-of-optimization" target="_blank" rel="noopener">
+        <span class="when">Oct 2026</span>
+        <div><h3>The Illusion of Optimization</h3><p>The lake, the watershed, the wave.</p></div>
+        <span class="where">Substack ↗</span>
       </a>
-      <a class="link-panel" href="about.html">
-        <span class="panel-label">About</span>
-        <h3>Formation and approach</h3>
-        <p>From a Brunel MMath through KTH FLOW, and the discipline behind the work.</p>
+      <a class="post" href="amistad.html">
+        <span class="when">Ensayo</span>
+        <div><h3>¿A dónde se van los amigos?</h3><p>Termodinámica de una amistad: un niño que construía y otro que derribaba.</p></div>
+        <span class="where">Read →</span>
       </a>
-      <a class="link-panel" href="contact.html">
-        <span class="panel-label">Contact</span>
-        <h3>Collaboration and correspondence</h3>
-        <p>Open to serious exchange on turbulence, nonlinear dynamics, and interpretable AI.</p>
-      </a>
+    </div>
+  </section>
+
+  <section class="cta-band reveal">
+    <span class="eyebrow">Let's talk</span>
+    <h2>Have a hard system to model, or a talk full of equations?</h2>
+    <p>I am happy to hear from researchers, from teams with forecasting or surrogate-modelling problems, and from anyone who presents technical work and is tired of pasting screenshots of equations.</p>
+    <div class="cta-list">
+      <div><strong>Research collaboration</strong>Turbulence, chaotic dynamics, interpretable latent models.</div>
+      <div><strong>Applied problems</strong>Forecasting and surrogate models for physical and engineering systems.</div>
+      <div><strong>Mama's Brain</strong>Pilots and feedback on slAIdes and EasyPlotter.</div>
+    </div>
+    <div class="hero-actions">
+      <a class="button button-solid" href="mailto:sanchis@kth.se">sanchis@kth.se</a>
+      <a class="button button-outline" href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="button button-outline" href="https://scholar.google.com/citations?user=egkPCv4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
     </div>
   </section>
 </main>
@@ -124,12 +177,14 @@
     <div class="footer-links">
       <a href="https://scholar.google.com/citations?user=egkPCv4AAAAJ" target="_blank" rel="noopener">Scholar</a>
       <a href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://substack.com/@sociedadenflujo" target="_blank" rel="noopener">Substack</a>
+      <a href="https://github.com/MarcialSanchis-Agudo" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Substack</a>
       <a href="mailto:sanchis@kth.se">Email</a>
     </div>
     <span>© 2026 · Stockholm</span>
   </div>
 </footer>
 
+<script src="assets/site.js?v=1" defer></script>
 </body>
 </html>
