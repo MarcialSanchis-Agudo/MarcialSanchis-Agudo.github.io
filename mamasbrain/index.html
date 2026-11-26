@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mama's Brain · Sovereign AI for expert work</title>
+<meta name="description" content="Mama's Brain builds local models for sovereign expert work, and software made natively for them. Makers of slAIdes, the editor for technical talks where LaTeX stays LaTeX.">
+<meta property="og:title" content="Mama's Brain · Sovereign AI for expert work">
+<meta property="og:description" content="Local models that stay with the people who own the knowledge, and software built natively for them. Makers of slAIdes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcialsanchis-agudo.github.io/mamasbrain/">
+<meta property="og:image" content="https://marcialsanchis-agudo.github.io/mamasbrain/assets/mb/two-users.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#09080B">
+<link rel="icon" href="assets/mb/mama-s-brain-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&family=Lato:wght@400;700&family=Poppins:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Mama's Brain, back to top"><img src="assets/mb/mama-s-brain-wordmark.svg" alt="Mama's Brain" width="71" height="36"></a>
+    <nav id="nav" aria-label="Sections">
+      <a href="#thesis">Thesis</a>
+      <a href="#slaides">slAIdes</a>
+      <a href="#easyplotter">EasyPlotter</a>
+      <a href="#writing">Writing</a>
+      <a href="#team">Team</a>
+      <a class="btn solid" href="https://slaides.app" target="_blank" rel="noopener">Try slAIdes</a>
+    </nav>
+    <button class="burger" aria-label="Menu" aria-controls="nav" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <span class="label">Mama's Brain · Stockholm</span>
+      <h1>Sovereign AI for <em class="grad">expert work.</em></h1>
+      <p class="lead">We build local models that stay with the people and companies who own the knowledge, and software made natively for them, so the expert keeps the data, the model and the decision.</p>
+      <div class="actions">
+        <a class="btn grad-btn" href="https://slaides.app" target="_blank" rel="noopener">Try slAIdes <span class="arr">→</span></a>
+        <a class="btn" href="#thesis">Read the thesis</a>
+      </div>
+    </div>
+
+    <div class="stage" aria-label="How we build: an AI agent and an expert working in the same slAIdes session">
+      <canvas id="horizon" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <div class="session" id="session">
+          <div class="session-head"><span class="label">slAIdes · MCP session</span><span>every write is a revision</span></div>
+          <div class="op" data-call="create_equation"><span class="who">Agent</span><span class="call"></span><span class="res">validated ✓</span></div>
+          <div class="op" data-call="apply_deck_changes"><span class="who">Agent</span><span class="call"></span><span class="res">rev 41 → 42</span></div>
+          <div class="op" data-call="render_slide"><span class="who">Agent</span><span class="call"></span><span class="res">looks at its work</span></div>
+          <div class="op expert-row" data-call="undo_deck_edit"><span class="who expert">Expert</span><span class="call"></span><span class="res">last word</span></div>
+        </div>
+        <div class="stage-caption">
+          <p>Our editor has two users. <em>Only one has hands.</em></p>
+          <span>The AI gets a toolbox of checked operations, not a brush.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="thesis">
+    <div class="wrap">
+      <div class="intro reveal">
+        <span class="label">Thesis</span>
+        <div>
+          <h2>Your knowledge should not have to <em>leave home</em> to be useful.</h2>
+          <p class="lead">Today, using AI in expert work means sending your data, drafts and know-how to someone else's model. We think experts and companies should be able to run that intelligence themselves, on their own terms.</p>
+        </div>
+      </div>
+      <ul class="points reveal">
+        <li>
+          <span class="k">01 · Models</span>
+          <div><h3>Local models <span class="status">In development</span></h3><p>Models that run where your data lives and are tuned to your field, so what you know stays yours.</p></div>
+        </li>
+        <li>
+          <span class="k">02 · Software</span>
+          <div><h3>Native software</h3><p>Tools designed for those models from the start: typed, checkable operations instead of prompts that produce pictures. An equation stays an equation; a chart keeps its data.</p></div>
+        </li>
+        <li>
+          <span class="k">03 · Judgment</span>
+          <div><h3>The expert decides</h3><p>Every change is visible, revisioned and reversible. The machine proposes; the person who has to defend the result has the last word.</p></div>
+        </li>
+      </ul>
+      <div class="road reveal" aria-label="Roadmap">
+        <div><span class="label">Today</span><b>Frontier assistants</b><p>slAIdes works with the assistant you already use, through MCP.</p></div>
+        <div><span class="label">Next</span><b>Smaller open models</b><p>The same software, running on models you can host.</p></div>
+        <div><span class="label">Then</span><b>Your own model</b><p>Tuned on your data, on your machines. The software is built for it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="slaides">
+    <div class="wrap">
+      <div class="intro reveal">
+        <span class="label">First product · Live</span>
+        <div>
+          <img src="assets/mb/slaides-logo.png" alt="slAIdes" style="height:44px;width:auto;margin-bottom:22px">
+          <h2>Technical talks where <em>LaTeX stays LaTeX.</em></h2>
+          <p class="lead">Equations, charts, tables and figures stay native objects that you and your AI assistant can edit. Every change is a revision you can inspect and undo.</p>
+          <ul class="feature-list">
+            <li><b>Live equations.</b> Edit the LaTeX, the slide follows.</li>
+            <li><b>Charts keep their data.</b> Fix the number, not the picture.</li>
+            <li><b>Tables do the maths.</b> SUM, AVERAGE, MIN, MAX.</li>
+            <li><b>miniME.</b> Turns a paper into an editable talk.</li>
+            <li><b>Undo one element.</b> Not the whole file.</li>
+            <li><b>Exports.</b> PDF, PPTX and PNG.</li>
+          </ul>
+          <p class="price">$1.99 per month</p>
+          <div class="actions"><a class="btn solid" href="https://slaides.app" target="_blank" rel="noopener">Open slaides.app <span class="arr">→</span></a></div>
+        </div>
+      </div>
+      <div class="video reveal">
+        <video src="assets/mb/slaides-minime-demo.mp4" poster="assets/mb/slaides-demo-poster.jpg" controls muted playsinline preload="none" aria-label="Screen recording: miniME turns a paper into a conference talk in slAIdes"></video>
+      </div>
+      <div class="shots reveal">
+        <figure><img src="assets/mb/fig-equations.jpg" alt="Equation editor with LaTeX source next to the slide" loading="lazy" width="1200" height="750"><figcaption><b>Live equations.</b> Click one, edit the LaTeX, the slide follows.</figcaption></figure>
+        <figure><img src="assets/mb/fig-table.jpg" alt="Table with formulas whose totals update" loading="lazy" width="1200" height="750"><figcaption><b>Tables that do the maths.</b> Totals update themselves.</figcaption></figure>
+        <figure><img src="assets/mb/fig-history.jpg" alt="Element history comparing then and now for one equation" loading="lazy" width="1200" height="750"><figcaption><b>Undo one element.</b> Compare then and now.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="easyplotter">
+    <div class="wrap">
+      <div class="intro reveal">
+        <span class="label">Second product · In development</span>
+        <div>
+          <h2>EasyPlotter: <em>figures you can rerun.</em></h2>
+          <p class="lead">A figure is a recipe of typed commands, not a one-off script. It reads your simulation and lab data, exports publication figures, and sends charts to slAIdes with the data still attached.</p>
+        </div>
+      </div>
+      <div class="chain reveal">
+        <div class="step"><span class="n">01 · DATA</span><h3>Your files</h3><p><code>VTK</code> <code>HDF5</code> <code>CSV</code> <code>NumPy</code> <code>Excel</code>, read where they live.</p></div>
+        <div class="step"><span class="n">02 · RECIPE</span><h3>Typed commands</h3><p>Every step of the figure is recorded and can be rerun on new data.</p></div>
+        <div class="step"><span class="n">03 · FIGURE</span><h3>Publication output</h3><p>PNG, or the matplotlib and pgfplots code behind it.</p></div>
+        <div class="step"><span class="n">04 · SLIDE</span><h3>Native chart in slAIdes</h3><p>Pasted with its data, so the talk and the paper never drift apart.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <div class="wrap substack">
+      <div class="reveal">
+        <span class="label">Writing</span>
+        <h2 style="margin-top:18px">Mama's Brain on <em>Substack.</em></h2>
+        <p class="lead" style="margin-top:20px">Essays on expertise, AI and sovereignty: what the machine gets right, what it gets wrong, and how to design for the expert who has to defend the result.</p>
+        <div class="posts">
+          <a href="https://mamasbrain8.substack.com/p/saturns-children-why-security-and" target="_blank" rel="noopener"><span class="when">Nov 2026</span><div><h3>Saturn's Children: why security and local models are the key</h3><p>The remora, the octopus and Metis.</p></div></a>
+          <a href="https://mamasbrain8.substack.com/p/vision-mission-and-values" target="_blank" rel="noopener"><span class="when">Oct 2026</span><div><h3>Vision, mission and values</h3><p>Coherent and sustainable workflows that mix machines and humans.</p></div></a>
+          <a href="https://mamasbrain8.substack.com/p/the-illusion-of-optimization" target="_blank" rel="noopener"><span class="when">Oct 2026</span><div><h3>The Illusion of Optimization</h3><p>The lake, the watershed, the wave.</p></div></a>
+        </div>
+      </div>
+      <iframe class="reveal" src="https://mamasbrain8.substack.com/embed" title="Subscribe to Mama's Brain on Substack" loading="lazy" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="wrap">
+      <div class="intro reveal">
+        <span class="label">Team</span>
+        <div>
+          <h2>Two researchers at <em>KTH, Stockholm.</em></h2>
+          <p class="lead">We build the tools we needed for our own research in fluid mechanics and AI. Bootstrapped, and honest about being early: slAIdes is live and charging, EasyPlotter and the local models are in development.</p>
+        </div>
+      </div>
+      <div class="team reveal">
+        <div class="person">
+          <img src="assets/mb/team-ms.jpg" alt="Mama's Brain mark with the initials MS on a music staff" width="600" height="600" loading="lazy">
+          <h3><a href="https://marcialsanchis-agudo.github.io/" style="border:0">Marcial Sanchis Agudo</a></h3>
+          <p>Co-founder · PhD researcher, KTH FLOW</p>
+        </div>
+        <div class="person">
+          <img src="assets/mb/team-fd.jpg" alt="Mama's Brain mark with the initials FD on a music staff" width="600" height="600" loading="lazy">
+          <h3>Francesco Mario D'Afiero</h3>
+          <p>Co-founder · PhD researcher, KTH</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="wrap reveal">
+      <span class="label warm">Get in touch</span>
+      <h2>Pilots, research groups and <em class="grad">collaborations.</em></h2>
+      <p>If your team presents technical work, or has knowledge that should not leave the building, we would like to hear from you.</p>
+      <div class="actions">
+        <a class="btn grad-btn" href="mailto:msanchisagudo@gmail.com">msanchisagudo@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/company/mamasbrain-solutions/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/mb/mama-s-brain-wordmark-cream.svg" alt="Mama's Brain" width="59" height="30">
+    <nav aria-label="Footer">
+      <a href="https://slaides.app" target="_blank" rel="noopener">slaides.app</a>
+      <a href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Substack</a>
+      <a href="https://www.linkedin.com/company/mamasbrain-solutions/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:msanchisagudo@gmail.com">Contact</a>
+    </nav>
+    <span>© 2026 Mama's Brain · Stockholm</span>
+  </div>
+</footer>
+
+<script src="site.js?v=1" defer></script>
+</body>
+</html>
