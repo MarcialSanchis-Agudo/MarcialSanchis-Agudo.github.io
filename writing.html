@@ -3,13 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Writing by Marcial Sanchis Agudo, essays and notes on AI, turbulence, and the mathematics of complex systems, plus highlights from LinkedIn.">
 <title>Writing · Marcial Sanchis Agudo</title>
+<meta name="description" content="Essays by Marcial Sanchis Agudo on AI, optimisation, learning and complex systems, published on the Sociedad en flujo Substack.">
+<meta property="og:title" content="Writing · Marcial Sanchis Agudo">
+<meta property="og:description" content="Essays by Marcial Sanchis Agudo on AI, optimisation, learning and complex systems, published on the Sociedad en flujo Substack.">
+<meta name="theme-color" content="#09090B">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body class="page-writing">
 
@@ -21,73 +24,86 @@
       <a href="research.html">Research</a>
       <a href="work.html">Publications</a>
       <a class="active" href="writing.html">Writing</a>
-      <a href="mb.html">MB</a>
+      <a class="nav-mb" href="mb.html">Mama's Brain</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <button class="nav-toggle" aria-label="Menu" aria-controls="nav" aria-expanded="false">☰</button>
   </div>
 </header>
 
 <main class="page-main">
-  <section class="page-hero" style="grid-template-columns:1fr;padding-bottom:20px">
+<section class="page-hero" style="grid-template-columns:1fr;padding-bottom:28px">
     <div class="hero-copy">
       <span class="eyebrow">Writing</span>
-      <h1>Essays and notes on AI, turbulence, and the shape of complex systems.</h1>
-      <p class="lead">A place to think in the open, longer-form pieces on the ideas behind the research. Over time this is where the writing will live, <span class="serif-italic">rather than scattered across a feed</span>.</p>
+      <h1>Essays on AI, optimisation and the shape of complex systems.</h1>
+      <p class="lead">Longer-form thinking on the ideas behind the research and behind Mama's Brain. It lives on <span class="serif-italic">Sociedad en flujo</span>, my Substack, rather than scattered across a feed.</p>
+      <div class="hero-actions">
+        <a class="button button-solid" href="https://mamasbrain8.substack.com/subscribe" target="_blank" rel="noopener">Subscribe on Substack <span class="arr">→</span></a>
+        <a class="button button-outline" href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Read the archive</a>
+      </div>
     </div>
   </section>
 
   <section class="section-block">
-    <div class="section-header">
-      <span class="eyebrow">Essays</span>
+    <div class="section-header reveal">
+      <span class="eyebrow">Latest · Sociedad en flujo</span>
+      <h2>Recent essays.</h2>
+    </div>
+    <div class="posts reveal">
+      <a class="post" href="https://mamasbrain8.substack.com/p/saturns-children-why-security-and" target="_blank" rel="noopener">
+        <span class="when">24 Nov 2026</span>
+        <div><h3>Saturn's Children: why security and local models are the key</h3><p>The remora, the octopus and Metis.</p></div>
+        <span class="where">Substack ↗</span>
+      </a>
+      <a class="post" href="https://mamasbrain8.substack.com/p/vision-mission-and-values" target="_blank" rel="noopener">
+        <span class="when">12 Oct 2026</span>
+        <div><h3>Vision, mission and values</h3><p>A manifesto for Mama's Brain: coherent and sustainable workflows that mix machines and humans.</p></div>
+        <span class="where">Substack ↗</span>
+      </a>
+      <a class="post" href="https://mamasbrain8.substack.com/p/the-illusion-of-optimization" target="_blank" rel="noopener">
+        <span class="when">2 Oct 2026</span>
+        <div><h3>The Illusion of Optimization</h3><p>The lake, the watershed, the wave. On what we lose when we optimise for the wrong target.</p></div>
+        <span class="where">Substack ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-header reveal">
+      <span class="eyebrow">Ensayo</span>
       <h2>The notebook.</h2>
     </div>
-    <a class="panel" href="amistad.html" style="display:block;padding:36px 40px">
+    <a class="panel reveal" href="amistad.html" style="padding:40px 44px">
       <span class="tag">Ensayo · Filosofía de los vínculos</span>
-      <h3 style="margin-top:10px">¿A dónde se van los amigos?</h3>
-      <p class="serif-italic" style="margin-top:6px">Termodinámica de una amistad: un niño que construía y otro que derribaba.</p>
-      <p style="margin-top:12px">«Solemos contar la amistad como un puerto en calma... Es una imagen bonita y falsa. El amigo no es quien retira la presión que el mundo ejerce sobre uno, es quien la vuelve soportable, incluso fértil.»</p>
-      <p class="meta" style="margin-top:14px;color:var(--gold)">Leer el ensayo → </p>
+      <h3 style="margin-top:12px;font-size:1.7rem">¿A dónde se van los amigos?</h3>
+      <p class="serif-italic" style="margin-top:6px;font-size:1.1rem">Termodinámica de una amistad: un niño que construía y otro que derribaba.</p>
+      <p style="margin-top:14px;max-width:70ch">«Solemos contar la amistad como un puerto en calma... Es una imagen bonita y falsa. El amigo no es quien retira la presión que el mundo ejerce sobre uno, es quien la vuelve soportable, incluso fértil.»</p>
+      <p class="meta">Leer el ensayo →</p>
     </a>
   </section>
 
   <section class="section-block">
-    <div class="section-header">
-      <span class="eyebrow">In progress</span>
-      <h2>Coming next.</h2>
-      <p>Longer arguments being moved from LinkedIn threads into essays: on optimization, learning, and interpretability.</p>
-    </div>
-  </section>
-
-  <section class="section-block">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="eyebrow">Highlights from LinkedIn</span>
       <h2>What drew conversation.</h2>
       <p>Full activity on <a href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/recent-activity/all/" target="_blank" rel="noopener">LinkedIn</a>.</p>
     </div>
-    <div class="grid grid-3">
-      <a class="panel" href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/recent-activity/all/" target="_blank" rel="noopener">
-        <span class="tag">Essay · series</span>
-        <h3>The Illusion of Optimization</h3>
-        <p>Part one of three, "The Unbroken Bubble and the Lie of the Genie." On what we lose when we optimize for the wrong target.</p>
-        <p class="meta">On LinkedIn · ~1.2k impressions</p>
-      </a>
-      <a class="panel" href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/recent-activity/all/" target="_blank" rel="noopener">
-        <span class="tag">Essay · AI &amp; learning</span>
+    <div class="grid grid-2">
+      <a class="panel reveal" href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/recent-activity/all/" target="_blank" rel="noopener">
+        <span class="tag">Essay · AI and learning</span>
         <h3>AI hasn't destroyed education</h3>
         <p>"Generative AI has not destroyed education; it has destroyed a transaction." On acquiring facts versus actually learning.</p>
-        <p class="meta">On LinkedIn · ~4.4k impressions</p>
+        <p class="meta">On LinkedIn · about 4.4k impressions</p>
       </a>
-      <a class="panel" href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/recent-activity/all/" target="_blank" rel="noopener">
+      <a class="panel reveal" href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/recent-activity/all/" target="_blank" rel="noopener">
         <span class="tag">Note · research life</span>
         <h3>Marie Curie secondment</h3>
         <p>Working with Microflown Technologies during the final secondment of the PhD, one of its best experiences.</p>
-        <p class="meta">On LinkedIn · ~2.8k impressions</p>
+        <p class="meta">On LinkedIn · about 2.8k impressions</p>
       </a>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
@@ -96,12 +112,14 @@
     <div class="footer-links">
       <a href="https://scholar.google.com/citations?user=egkPCv4AAAAJ" target="_blank" rel="noopener">Scholar</a>
       <a href="https://www.linkedin.com/in/marcial-sanchis-agudo-3500a6176/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://substack.com/@sociedadenflujo" target="_blank" rel="noopener">Substack</a>
+      <a href="https://github.com/MarcialSanchis-Agudo" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://mamasbrain8.substack.com" target="_blank" rel="noopener">Substack</a>
       <a href="mailto:sanchis@kth.se">Email</a>
     </div>
     <span>© 2026 · Stockholm</span>
   </div>
 </footer>
 
+<script src="assets/site.js?v=1" defer></script>
 </body>
 </html>
